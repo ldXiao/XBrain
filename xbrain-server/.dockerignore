@@ -1,0 +1,26 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+build/
+dist/
+.eggs/
+*.egg-info/
+.env
+*.env
+*.log
+*.sqlite3
+*.db
+.coverage
+.pytest_cache/
+.tox/
+.cache/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  xbrain-server:
+    image: xbrain-server:latest
+    build: ./xbrain-server
+    container_name: xbrain-server
+    ports:
+      - "8000:8000"
+    # volumes:
+    #   - ./xbrain-server:/app
+    command: uvx uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+  xbrain-ui:
+    image: xbrain-ui:latest
+    build: ./xbrain-ui
+    container_name: xbrain-ui
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./xbrain-ui/src:/app/src
+      - ./xbrain-ui/public:/app/public
+      - /app/node_modules
+    command: npm run dev
+    environment:
+      - NODE_ENV=development

@@ -6,9 +6,7 @@ services:
     container_name: xbrain-server
     ports:
       - "8000:8000"
-    # volumes:
-    #   - ./xbrain-server:/app
-    command: uvx uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+    command: uv run uvicorn main:app --host 0.0.0.0 --port 8000 --reload
   xbrain-ui:
     image: xbrain-ui:latest
     build: ./xbrain-ui

@@ -1,0 +1,13 @@
+[project]
+name = "xbrain-server"
+version = "0.1.0"
+description = "FastAPI microservice for XBrain"
+authors = ["Your Name <your.email@example.com>"]
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "uvicorn"
+]
+
+[tool.uv]
+# uv-specific configuration can go here

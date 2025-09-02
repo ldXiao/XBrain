@@ -4,10 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
+    "dev": "tsc -b && vite build &&vite --host 0.0.0.0",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postinstall": "node ./scripts/copy-pdfjs-assets.mjs",
+    "copy:pdfjs": "node ./scripts/copy-pdfjs-assets.mjs"
   },
   "dependencies": {
   "@types/pdfjs-dist": "^2.10.377",

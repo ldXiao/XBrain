@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { PdfCanvas } from './components/pdfviewer'
 import './App.css'
-import samplePdf from './assets/sample.pdf'
+import samplePdf from './assets/samp.pdf'
 
 function App() {
   const [count, setCount] = useState(0)

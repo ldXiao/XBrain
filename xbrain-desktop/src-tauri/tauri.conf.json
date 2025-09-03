@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "XBrain Desktop",
+  "version": "0.1.0",
+  "identifier": "com.xbrain.desktop",
+  "build": {
+    "beforeDevCommand": "vite",
+    "beforeBuildCommand": "vite build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [{
+      "title": "XBrain Desktop",
+      "width": 1024,
+      "height": 768,
+      "resizable": true
+    }]
+  },
+  "bundle": {
+  "active": true,
+  "targets": ["nsis"],
+  "icon": ["icons/icon.ico"]
+  }
+}

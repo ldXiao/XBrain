@@ -1,0 +1,14 @@
+.app {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  padding: 3rem;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #999;
+  background: #fafafa;
+}
